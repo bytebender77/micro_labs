@@ -1,0 +1,127 @@
+.message {
+  display: flex;
+  margin-bottom: 10px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message.user {
+  justify-content: flex-end;
+}
+
+.message.assistant {
+  justify-content: flex-start;
+}
+
+.message-content {
+  max-width: 70%;
+  padding: 12px 16px;
+  border-radius: 18px;
+  word-wrap: break-word;
+}
+
+.message.user .message-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.message.assistant .message-content {
+  background: #e8e8e8;
+  color: #333;
+  border-bottom-left-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .message.assistant .message-content {
+  background: #2a2a2a;
+  color: var(--text-primary);
+}
+
+.message.emergency .message-content {
+  background: #fee;
+  border: 2px solid #dc3545;
+  color: #721c24;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .message.emergency .message-content {
+  background: #3a1a1a;
+  border-color: #f44336;
+  color: #fecaca;
+}
+
+.emergency-badge {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.message-text {
+  line-height: 1.5;
+}
+
+.message-text p {
+  margin: 4px 0;
+}
+
+.message-time {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.typing-indicator {
+  display: flex;
+  gap: 4px;
+  padding: 10px;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #999;
+  animation: typing 1.4s infinite;
+  transition: background 0.3s ease;
+}
+
+.dark-mode .typing-indicator span {
+  background: #666;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  30% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .message-content {
+    max-width: 85%;
+  }
+}
+

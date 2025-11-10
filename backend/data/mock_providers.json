@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "City General Hospital",
+    "type": "hospital",
+    "address": "123 Main Street, City, State 12345",
+    "phone": "(555) 123-4567",
+    "latitude": 37.7749,
+    "longitude": -122.4194
+  },
+  {
+    "id": "2",
+    "name": "Community Health Clinic",
+    "type": "clinic",
+    "address": "456 Oak Avenue, City, State 12345",
+    "phone": "(555) 234-5678",
+    "latitude": 37.7849,
+    "longitude": -122.4094
+  },
+  {
+    "id": "3",
+    "name": "Downtown Pharmacy",
+    "type": "pharmacy",
+    "address": "789 Elm Street, City, State 12345",
+    "phone": "(555) 345-6789",
+    "latitude": 37.7649,
+    "longitude": -122.4294
+  },
+  {
+    "id": "4",
+    "name": "Urgent Care Center",
+    "type": "clinic",
+    "address": "321 Pine Road, City, State 12345",
+    "phone": "(555) 456-7890",
+    "latitude": 37.7949,
+    "longitude": -122.4394
+  },
+  {
+    "id": "5",
+    "name": "Family Medical Practice",
+    "type": "clinic",
+    "address": "654 Maple Drive, City, State 12345",
+    "phone": "(555) 567-8901",
+    "latitude": 37.7549,
+    "longitude": -122.4494
+  },
+  {
+    "id": "6",
+    "name": "24-Hour Emergency Clinic",
+    "type": "hospital",
+    "address": "987 Cedar Lane, City, State 12345",
+    "phone": "(555) 678-9012",
+    "latitude": 37.8049,
+    "longitude": -122.3994
+  }
+]
+

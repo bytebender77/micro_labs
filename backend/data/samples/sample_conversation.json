@@ -1,0 +1,53 @@
+{
+  "session_id": "sample-123",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! I'm HealthGuide, your AI assistant for the Fever Helpline. I understand you're concerned about a fever. Can you tell me about your symptoms? What are you experiencing right now?",
+      "timestamp": "2024-01-15T10:00:00"
+    },
+    {
+      "role": "user",
+      "content": "I have a fever and feel really tired",
+      "timestamp": "2024-01-15T10:00:30"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand you're feeling unwell. To better assess your situation, do you know your current body temperature? If you have a thermometer, what reading did you get?",
+      "timestamp": "2024-01-15T10:01:00"
+    },
+    {
+      "role": "user",
+      "content": "It's 101.5 degrees Fahrenheit",
+      "timestamp": "2024-01-15T10:01:30"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for that information. How long have you been experiencing this fever?",
+      "timestamp": "2024-01-15T10:02:00"
+    },
+    {
+      "role": "user",
+      "content": "About 2 days now",
+      "timestamp": "2024-01-15T10:02:30"
+    },
+    {
+      "role": "assistant",
+      "content": "I see. To provide appropriate guidance, may I ask which age group applies to you?",
+      "timestamp": "2024-01-15T10:03:00"
+    },
+    {
+      "role": "user",
+      "content": "I'm an adult",
+      "timestamp": "2024-01-15T10:03:30"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you. Based on the information you've provided, you have a moderate fever that has persisted for 2 days. I recommend:\n\n• Rest and stay hydrated\n• Take fever-reducing medication if needed (if not allergic)\n• Monitor your temperature\n• If your fever persists beyond 3 days or worsens, consult a healthcare provider\n\nIs there anything else you'd like to tell me about your symptoms?",
+      "timestamp": "2024-01-15T10:04:00"
+    }
+  ],
+  "triage_level": "SELF_CARE",
+  "summary": "Moderate fever (101.5°F) persisting for 2 days in an adult. No red flag symptoms."
+}
+

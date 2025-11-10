@@ -1,0 +1,37 @@
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.language-selector label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.language-select {
+  padding: 8px 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.language-select:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.language-select:focus {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.language-select option {
+  background: #667eea;
+  color: white;
+}
+

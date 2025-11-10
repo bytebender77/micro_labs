@@ -1,0 +1,32 @@
+Based on the conversation history and current message, assess the triage level and provide recommendations.
+
+Respond ONLY in JSON format with the following structure:
+
+{
+  "triage_level": "EMERGENCY|URGENT|SELF_CARE|FOLLOW_UP",
+  "escalate": true|false,
+  "summary": "Brief summary of the situation",
+  "recommended_next_steps": [
+    "Step 1",
+    "Step 2",
+    "Step 3"
+  ],
+  "next_question": "Next question to ask the user (if conversation not complete, otherwise null)"
+}
+
+TRIAGE LEVEL GUIDELINES:
+
+EMERGENCY: Red flag symptoms present, requires immediate emergency care
+URGENT: High fever (>103°F), persistent symptoms, or concerning factors - see doctor soon
+SELF_CARE: Mild symptoms, low-grade fever - can be managed at home with monitoring
+FOLLOW_UP: Symptoms that should be monitored and may require follow-up with healthcare provider
+
+CONSIDER THESE FACTORS:
+- Temperature level (high fever = more urgent)
+- Duration of symptoms (longer = more concerning)
+- Age group (infants and seniors need more attention)
+- Associated symptoms (breathing issues, chest pain, etc. = more urgent)
+- Overall severity of symptoms
+
+Always prioritize safety - when in doubt, recommend consulting a healthcare provider.
+
